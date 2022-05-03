@@ -5,7 +5,7 @@ from algosdk import v2client
 from algosdk.encoding import base64
 
 algod_token  = 'a' * 64
-algod_addr   = 'http://192.168.1.142:4001'
+algod_addr   = 'http://127.0.0.1:4001'
 algod_client = v2client.algod.AlgodClient(algod_token, algod_addr)
 
 def contains_lsig(txn):
